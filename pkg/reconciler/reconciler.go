@@ -58,10 +58,10 @@ func (r *Reconciler) ReconcileNamespaceChange(rbacDef *rbacmanagerv1beta1.RBACDe
 		return err
 	}
 
-	err = r.reconcileServiceAccounts(&p.parsedServiceAccounts)
-	if err != nil {
-		return err
-	}
+//	err = r.reconcileServiceAccounts(&p.parsedServiceAccounts)
+//	if err != nil {
+//		return err
+//	}
 
 	if p.hasNamespaceSelectors(rbacDef) {
 		slog.Info("Reconciling namespace", "namespace", namespace.Name, "rbacDefinition", rbacDef.Name)

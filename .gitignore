@@ -34,3 +34,5 @@ coverage.txt
 cover-report.html
 node_modules
 /dist
+# Added by goreleaser init:
+dist/
